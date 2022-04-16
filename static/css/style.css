@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: fac;
+    src: url(/static/css/fonts/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor01: #0D2557;
+    --cor02: #93A8C9;
+    --cor022: #e6effd;
+    --cor03: #f2fbf4;
+    --cor04: #F5DED5;
+    --cor05: #608D96;
+    --cor06: #093E26;
+    --cor07: #afdbd3;
+    --cor08: #c1faef;
+
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-padrao01: 'Lucida Sans Regular', Helvetica, sans-serif;
+    --font-padrao02: Arial, Verdana, Helvetica, sans-serif; 
+    --font-android: 'Android', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header {
+    color: white;
+    font-size: 1.2em;
+    max-width: 850px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header h1 {
+    font-family: var(--font-android);
+    font-size: 3rem;
+    margin: 30px;
+}
+
+nav{
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 5px;
+}
+nav a{
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    transition-duration: 0.5s;
+
+
+}
+
+body {
+    background-color:var(--cor01);
+}
+
+main {
+    background-color: var(--cor02);
+    max-width: 850px;
+    min-width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+a {
+ font-size: 1rem;
+}
+
+a:hover {
+    color:var(--cor02);
+}
+
+#login-container {
+    background-color: #82FCE6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+ label,input {
+     display: block;
+     max-width: 300px;
+     min-width: 100px;
+     text-align: left;
+     border-radius: 10px;
+ }
+
+ label {
+     font-weight: bold;
+     font-size: .8rem;
+ }
+
+ input {
+     padding: 10px;
+     font-size: 1rem;
+     margin-bottom: 20px;
+ }
+
+ input:focus{
+     border-bottom: 2px solid blue;
+ }
+
+ input[type="submit"] {
+     text-align: center;
+     text-transform: uppercase;
+     border: none;
+     height: 40px;
+     border-radius: 10px;
+     margin-top: 30px;
+     cursor: pointer;
+     background-color: #497493;
+     width: 100%;
+     font-weight: bold;
+ }
+
+ input[type="submit"]:hover{
+     background-color: #1B223C;
+     transition: .5s;
+ }
+
+ #register-container p {
+     margin-bottom: 10px;
+ }
+
+
+

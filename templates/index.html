@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
+    <title>ProntuarioFaciol</title>
+</head>
+<body>
+    <header>        
+        <h1>Bem vindo ao ProntFácil</h1>
+        <nav>
+            <a href="{{ url_for('editarEvento')}}">editar Evento</a>
+            <a href="{{ url_for('editarProntuario')}}">editar Prontuario</a>
+            <a href="{{ url_for('editarUsuario')}}">Editar Usuario</a>
+            <a href="{{ url_for('evento')}}">Evento</a>
+            <a href="{{ url_for('login')}}">Login</a>
+            <a href="{{ url_for('medico')}}">Medico</a>
+            <a href="{{ url_for('prontuario')}}">prontuario</a>
+            <a href="{{ url_for('consultaPaciente')}}">consultaPaciente</a>
+            <a href="{{ url_for('usuario')}}">usuario</a>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <form action="">
+            <label for="crm">Número do CRM</label>
+            <input type="crm" name="crm" id="crm" placeholder="Digite o seu CRM" autocomplete="off">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            <input type="submit"  value="Entrar">
+        </form>        
+        <p>Ainda não tem conta?</p>
+        <a href="/index2.             html">Cadastre-se</a>
+        
+    </main>
+    
+</body>
+</html>
