@@ -1,5 +1,4 @@
 from flask import Flask, render_template, url_for
-from markupsafe import Markup, escape
 
 def init_app(app):
    
