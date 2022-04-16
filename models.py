@@ -4,8 +4,8 @@ from sqlalchemy_serializer import SerializerMixin
 
 
 class Usuario(db.Model, SerializerMixin):
-	id = db.Column(db.Integer, primary_key=True)
-	nome = db.Column(db.String(140), nuLLable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(140), nuLLable=False)
     date_create = db.Column(db.DateTime, default=datetime.utcnow)
 	#dataNacimento = db.Column(db.DateTime)
 	#login = db.Column(db.String(20), unique=True)
