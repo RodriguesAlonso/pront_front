@@ -12,3 +12,5 @@ config.init_app(app)
 database.init_app(app)
 site.init_app(app)
     #return app
+if __name__ == '__main__':
+    app.run(port=5000)
